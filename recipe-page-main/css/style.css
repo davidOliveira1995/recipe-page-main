@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/*
+  <uniquifier>: Use a unique and descriptive class name
+    <weight>: Use a value from 100 to 900
+
+.outfit-<uniquifier> {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+  */
+
+.outfit-p {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+
+  --Brown-800: hsl(14, 45%, 36%);
+
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+}
+
+body {
+  font-size: 16px;
+}
+
+/* Configurantion Global */
+.header h1 {
+    font-size: 2em;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.header p {
+    color: var(--Stone-600);
+    font-size: 1em;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.preparation-time {
+    background-color: var(--Rose-50);
+}
+
+.preparation-time h3 {
+    color: var(--Rose-800);
+}
+
+
+/* Fim Configuration Global */
+
+@media screen and (max-width: 375px) {
+    .container {
+        padding: 30px;
+    }
+
+  .card {
+    width: 375px;
+  }
+}
+
+/* FOOTER */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
